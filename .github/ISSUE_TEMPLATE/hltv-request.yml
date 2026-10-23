@@ -1,0 +1,24 @@
+name: Add a player / Añadir jugador
+description: Ask for an HLTV player to be shown in Lobbyscope / Pide que un jugador de HLTV salga en Lobbyscope
+title: "[Add] "
+labels: ["request"]
+body:
+  - type: input
+    id: hltv
+    attributes:
+      label: HLTV profile / Perfil de HLTV
+      placeholder: https://www.hltv.org/player/12345/nick
+    validations:
+      required: true
+  - type: input
+    id: faceit
+    attributes:
+      label: FACEIT profile / Perfil de FACEIT
+      placeholder: https://www.faceit.com/en/players/nick
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Notas
+      description: Current team, anything else useful / Equipo actual, cualquier otra cosa útil
