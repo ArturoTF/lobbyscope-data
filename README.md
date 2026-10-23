@@ -34,6 +34,12 @@ List of players with an HLTV profile shown by the **Lobbyscope** browser extensi
 
 Check your change locally with `node scripts/validate.js` (no dependencies).
 
+## Support / Apoyar
+
+Lobbyscope is free and will stay free. If you enjoy it, you can support development on Ko-fi ☕ <https://ko-fi.com/arturotf>. Donations are optional and don't unlock anything.
+
+*Lobbyscope es gratis y lo seguirá siendo. Si te gusta, puedes apoyar el desarrollo en Ko-fi ☕. Las donaciones son opcionales y no desbloquean nada.*
+
 ## License / Licencia
 
 All rights reserved, see [LICENSE](LICENSE). / *Todos los derechos reservados, ver [LICENSE](LICENSE).*
