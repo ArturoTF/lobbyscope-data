@@ -30,7 +30,7 @@ List of players with an HLTV profile shown by the **Lobbyscope** browser extensi
 | `name` | HLTV nickname shown on the card. |
 | `team`, `country` | Optional. `country` is a 2-letter code (`ES`, `UA`…). |
 | `hltvUrl` | HLTV profile. |
-| `photo` | HLTV bodyshot, the `w=400` image of the profile. Empty = card without photo. |
+| `photo` | HLTV bodyshot, the `w=400` image of the profile. If the player has no bodyshot, their HLTV gallery picture works too. Empty = card without photo. |
 
 Check your change locally with `node scripts/validate.js` (no dependencies).
 

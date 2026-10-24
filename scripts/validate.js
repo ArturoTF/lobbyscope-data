@@ -6,7 +6,8 @@ const path = require('path');
 const FILE = path.join(__dirname, '..', 'hltv-players.json');
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
 const HLTV_URL = /^https:\/\/www\.hltv\.org\/player\/(\d+)\/\S+$/;
-const PHOTO = /^https:\/\/img-cdn\.hltv\.org\/playerbodyshot\/[A-Za-z0-9_-]+\.png\?ixlib=java-2\.1\.0&w=400&s=[a-f0-9]{32}$/;
+// HLTV bodyshot (preferred) or, for players without one, their HLTV gallery picture. Both are signed CDN URLs.
+const PHOTO = /^https:\/\/img-cdn\.hltv\.org\/(?:playerbodyshot\/[A-Za-z0-9_-]+\.png\?ixlib=java-2\.1\.0&w=400|gallerypicture\/[A-Za-z0-9_-]+\.(?:jpe?g|png)\?\S*)&s=[a-f0-9]{32}$/;
 const FIELDS = new Set(['faceitId', 'faceit', 'name', 'team', 'country', 'hltvUrl', 'photo']);
 
 const errors = [];
@@ -39,7 +40,7 @@ list.forEach((p, i) => {
   if (!p.name || !p.name.trim()) errors.push(`${label}: "name" is required`);
   const hltv = HLTV_URL.exec(p.hltvUrl || '');
   if (!hltv) errors.push(`${label}: "hltvUrl" must look like https://www.hltv.org/player/<id>/<nick>`);
-  if (p.photo && !PHOTO.test(p.photo)) errors.push(`${label}: "photo" must be the w=400 HLTV bodyshot URL (or empty)`);
+  if (p.photo && !PHOTO.test(p.photo)) errors.push(`${label}: "photo" must be an HLTV bodyshot (w=400) or gallery picture URL (or empty)`);
   if (p.country && !/^[A-Z]{2}$/.test(p.country)) errors.push(`${label}: "country" must be a 2-letter uppercase code`);
 
   if (p.faceitId) dupe('faceitId', p.faceitId, i, label);
