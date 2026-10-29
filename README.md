@@ -6,7 +6,7 @@ List of players with an HLTV profile shown by the **Lobbyscope** browser extensi
 
 ## Request a player / Solicitar un jugador
 
-- **Discord** (recommended / recomendado): https://discord.gg/56FFFgvC98
+- **Discord** (recommended / recomendado): https://discord.gg/wjefGP5r2j
 - **Issue**: *New issue → Add a player* (no fork needed / sin hacer fork).
 - **Pull request**: edit `hltv-players.json` and open a PR. Every PR is checked automatically and reviewed before it is merged. / *Edita `hltv-players.json` y abre un PR. Cada PR se valida automáticamente y se revisa antes de aceptarlo.*
 
