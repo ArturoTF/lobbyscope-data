@@ -6278,5 +6278,21 @@
   "country": "ES",
   "hltvUrl": "https://www.hltv.org/player/25614/kaongod",
   "photo": "https://img-cdn.hltv.org/playerbodyshot/mVV2gyc-K0sUjDKv9WwD9a.png?ixlib=java-2.1.0&w=400&s=20bc59a6a686055cb8ba4348ca6e91c4"
+  },
+  {
+    "faceitId": "da451254-148b-4e73-b1b0-a3a372d13026",
+    "name": "kr0wa",
+    "team": "Ascend",
+    "country": "AR",
+    "hltvUrl": "https://www.hltv.org/player/21479/kr0wa",
+    "photo": ""
+  },
+  {
+    "faceitId": "25b4d9bb-7e08-41ed-aa4a-a88b34f369a0",
+    "name": "maqu1na",
+    "team": "",
+    "country": "ES",
+    "hltvUrl": "https://www.hltv.org/player/25613/maqu1na",
+    "photo": "https://img-cdn.hltv.org/playerbodyshot/8XlFAEQDHt3L9AxxDniOn0.png?ixlib=java-2.1.0&w=400&s=b7d6091f006a56c189c466b19c061a19"
   }
 ]
